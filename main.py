@@ -8,8 +8,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 import socket
 
 message_text = 'Essa mensagem está sendo mandada por um robô muito obrigado pela atenção.'  # message
-no_of_message = 1  # no. of time
-moblie_no_list = [553299999999]  # list of phone number
+no_of_message = 10  # no. of time
+moblie_no_list = [553291242224,553198808957]  # list of phone number
 
 
 def element_presence(by, xpath, time):
@@ -26,8 +26,12 @@ def is_connected():
     except:
         is_connected()
 
-
-driver = webdriver.Chrome(executable_path="chromedriver.exe")
+options = webdriver.ChromeOptions()
+options.binary_location = "C:\Program Files (x86)\Google\Chrome Dev\Application\chrome.exe"
+chrome_driver_binary = "chromedriver.exe"#/usr/local/bin/chromedriver"
+driver = webdriver.Chrome(chrome_driver_binary, chrome_options=options)
+ 
+#driver = webdriver.Chrome(executable_path="chromedriver.exe")
 driver.get("http://web.whatsapp.com")
 sleep(10)  # wait time to scan the code in second
 
