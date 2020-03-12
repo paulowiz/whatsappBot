@@ -9,7 +9,7 @@ import socket
 
 message_text = 'Essa mensagem está sendo mandada por um robô muito obrigado pela atenção.'  # message
 no_of_message = 10  # no. of time
-moblie_no_list = [553291242224,553198808957]  # list of phone number
+moblie_no_list = [553291242224,557991222423]  # list of phone number
 
 
 def element_presence(by, xpath, time):
@@ -27,7 +27,7 @@ def is_connected():
         is_connected()
 
 options = webdriver.ChromeOptions()
-options.binary_location = "C:\Program Files (x86)\Google\Chrome Dev\Application\chrome.exe"
+options.binary_location = "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
 chrome_driver_binary = "chromedriver.exe"#/usr/local/bin/chromedriver"
 driver = webdriver.Chrome(chrome_driver_binary, chrome_options=options)
  
