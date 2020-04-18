@@ -7,9 +7,9 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 import socket
 
-message_text = 'Essa mensagem está sendo mandada por um robô muito obrigado pela atenção.'  # message
-no_of_message = 10  # no. of time
-moblie_no_list = [553291242224,557991222423]  # list of phone number
+message_text = 'https://hangouts.google.com/call/6IWDLvjWN6-xrHkPRPkUAEEE'  # message
+no_of_message = 100  # no. of time
+moblie_no_list = [553194185307]  # list of phone number
 
 
 def element_presence(by, xpath, time):
