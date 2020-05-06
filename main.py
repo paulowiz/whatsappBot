@@ -7,9 +7,12 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 import socket
 
-message_text = 'https://hangouts.google.com/call/6IWDLvjWN6-xrHkPRPkUAEEE'  # message
-no_of_message = 100  # no. of time
-moblie_no_list = [553194185307]  # list of phone number
+message_text = 'Olá Vitor'  # message
+no_of_message = 1500  # no. of time
+moblie_no_list = open('contatos.txt','r') #[553183001068]  # list of phone number
+
+for num in moblie_no_list:
+    print(num)
 
 
 def element_presence(by, xpath, time):
